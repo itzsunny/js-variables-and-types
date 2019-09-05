@@ -48,7 +48,7 @@ var add_200 = amount+200;
 // Define a new variable and store the value that is 4 times the value of amount.
 var mul_4  = amount*4;
 // Define a new variable and store the reminder when the value of amount is  divided by 21.
-var div_21 = amount/21;
+var div_21 = amount%21;
 
 
 Logical Operation:
@@ -58,7 +58,8 @@ Solve this using logical operations. (<, >, &&, ||)
 js
 var johnAge = 45;
 var markAge = 35;
-
+(johnAge > markAge) && alert ("JOHN IS OLDER") || (johnAge < markAge) && alert ("mark is older");
+// Check who is younger
 // Check who is older eithe John or Mark
 (johnAge < markAge) && alert ("mark is older") || (johnAge > markAge) && alert ("john is older");
 // Check who is younger
@@ -71,7 +72,7 @@ var markAge = 35;
 
 var john_age = johnAge;
 // Check if john is equal to or greater then mark.
-(john_age == markAge) && alert("qual age") || (john_age > markAge) && alert("john is greater then mark");
+(john_age == markAge) && alert("equal age") || (john_age > markAge) && alert("john is greater then mark");
 // Check if john is less then or equal to mark.
 (john_age < markAge ) && alert ("john is less then mark") || (john_age == markAge) && alert("john is equal to mark ") || alert("john is neither less nor equal to mark");
 

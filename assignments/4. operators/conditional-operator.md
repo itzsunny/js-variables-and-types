@@ -14,17 +14,66 @@
 var firstName = 'John';
 var status = 'single';
 // Your code goes here
+ let input = prompt("Enter john's  marital status");
+if(input == status)
+{
+alert("John is single");
+}
+else {
+	alert("you gussed it wrong");
+}
 ```
 
 3. 🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 ```js
-// your code goes here
+// your goes here
+
+let input1 = prompt("enter 1st integer");
+let input2 = prompt("enter 2nd integer");
+
+if(input1 > input2)
+{
+	alert(`${input1} is greater`);
+}
+else if (input1 < input2) {
+		
+		alert (`${input2} is greater`);
+	}
+	else if (input1 = input2)
+	{
+
+		alert ("both are same");
+	}
+	else {
+		alert ("invalid input");
+	}
+
 ```
 
 4. 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 
 ```js
 // Your code goes here
+let integer1 = prompt("enter the 1st integer");
+let integer2 = prompt("enter the 2nd integer");
+let operator = prompt("enter the operator",+ , - ,* ,% , etc);
+if (operator = `+`){
+	alert("addition is " `${integer1+integer2}`);
+	else if (operator = `-`)
+	{
+		alert("subtraction is " `${integer1 - integer2}`);
+	}
+	else if (operator = `*`)
+	{
+		alert(" multiplication is " `${integer1 * integer2}`);
+	}
+	else if (operator = `%`){
+		alert("reminder is " `${integer1 % integer2}`);
+	}
+	else {
+		alert("invalid input");
+	}
+}
 ```
 
 ## Switch Statement
