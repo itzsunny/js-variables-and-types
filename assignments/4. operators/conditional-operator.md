@@ -56,24 +56,19 @@ else if (input1 < input2) {
 // Your code goes here
 let integer1 = prompt("enter the 1st integer");
 let integer2 = prompt("enter the 2nd integer");
-let operator = prompt("enter the operator",+ , - ,* ,% , etc);
-if (operator = `+`){
-	alert("addition is " `${integer1+integer2}`);
-	else if (operator = `-`)
-	{
-		alert("subtraction is " `${integer1 - integer2}`);
-	}
-	else if (operator = `*`)
-	{
-		alert(" multiplication is " `${integer1 * integer2}`);
-	}
-	else if (operator = `%`){
-		alert("reminder is " `${integer1 % integer2}`);
-	}
-	else {
-		alert("invalid input");
-	}
+let operator = prompt("enter the operator,+ , - ,* ,% , etc");
+if (operator === `+`){
+	alert(`addition is ${integer1 + integer2}`);
+} else if (operator === `-`) {
+	alert(` substraction is ${integer1 - integer2}`);
+} else if (operator === `*`) {
+	alert(`multiplication is${integer1 * integer2}`);
+} else if (operator === `%`) {
+	alert(` reminder is ${integer1 % integer2}`);
+} else {
+	alert("invalid operator");
 }
+
 ```
 
 ## Switch Statement
