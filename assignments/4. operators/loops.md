@@ -14,6 +14,22 @@ const ACCESSORY_PRICE = 9.99;
 var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
+function calculateTax(){
+ amount = amount+PHONE_PRICE + (PHONE_PRICE * TAX_RATE);
+ return amount;
+}
+function formatAmount(){
+	amount= amount+ACCESSORY_PRICE + ACCESSORY_PRICE * TAX_RATE ;
+	return amount;
+}
+while (amount < bank_balance){
+   calculateTax()
+    if (amount < SPENDING_THRESHOLD){
+        formatAmount()
+    }
+}
+
+
 ```
  ⛑ Answer of the above will `$334.76`.
 
@@ -73,8 +89,11 @@ while(i<20)
 let i=1;
  while(i <20)
 {
-	if (i%2 == 0) continue ;
+	if (i % 2 == 0){
 	console.log(i);
+	
+	}
+	
 	i++;
 }
 ```

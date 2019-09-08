@@ -9,6 +9,25 @@
     * [ ] Mul
     * [ ] Div
 
+```js 
+let integer1 = +prompt("enter the 1st integer");
+let integer2 = +prompt("enter the 2nd integer");
+let operator = prompt("enter the operator,+ , - ,* ,% , etc");
+if (operator === `+`){
+	alert(`addition is ${integer1 + integer2}`);
+} else if (operator === `-`) {
+	alert(` substraction is ${integer1 - integer2}`);
+} else if (operator === `*`) {
+	alert(`multiplication is${integer1 * integer2}`);
+} else if (operator === `%`) {
+	alert(` reminder is ${integer1 % integer2}`);
+} else {
+	alert("invalid operator");
+}
+
+	
+```
+
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
 ```js
 var firstName = 'John';
@@ -54,20 +73,16 @@ else if (input1 < input2) {
 
 ```js
 // Your code goes here
-let integer1 = +prompt("enter the 1st integer");
-let integer2 = +prompt("enter the 2nd integer");
-let operator = prompt("enter the operator,+ , - ,* ,% , etc");
-if (operator === `+`){
-	alert(`addition is ${integer1 + integer2}`);
-} else if (operator === `-`) {
-	alert(` substraction is ${integer1 - integer2}`);
-} else if (operator === `*`) {
-	alert(`multiplication is${integer1 * integer2}`);
-} else if (operator === `%`) {
-	alert(` reminder is ${integer1 % integer2}`);
+let num1 = +prompt("enter first integer");
+let num2 = +prompt("enter second integer");
+let num3 = +prompt("enter third integer");
+product = (num1*num2*num3);
+if (product>0){
+alert (`+ ${product}`);
 } else {
-	alert("invalid operator");
+	alert(product);
 }
+
 
 ```
 
