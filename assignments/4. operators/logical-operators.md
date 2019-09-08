@@ -77,5 +77,5 @@ if (temperature < 32){
 4. 🎖 Output of this and the reason behind the output.
 ```js
 alert( alert(1) || 2 || alert(3) );
-output will be 1 then 2 because by default it have to print 1 but its not defined so it will movie forward and look for truthy value so it 2 next to it which is truthy.
+output will be 1 first because alert itself is a function and it should display the value inside it and again it will show undefined as its not defined so it will move forward and look for truthy value so it's  2 next to it which is truthy.
 ```
