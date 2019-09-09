@@ -19,7 +19,7 @@ function calculateTax(){
  return amount;
 }
 function formatAmount(){
-	amount= amount+ACCESSORY_PRICE + ACCESSORY_PRICE * TAX_RATE ;
+	amount= amount+ACCESSORY_PRICE + (ACCESSORY_PRICE * TAX_RATE) ;
 	return amount;
 }
 while (amount < bank_balance){
